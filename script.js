@@ -33,12 +33,12 @@ const cookedFood = [];
 function grill (currentObject) {
   
     for ( let i = 0; i < uncookedFood.length; i++){   
-        currentObject.cooked = true;
+        currentObject[i].cooked = true;
         // Put the cooked food into the appropriate array
         cookedFood.push(currentObject);
     }
 
 };
 
-grill(cookedFood);
+grill(uncookedFood);
 console.log(cookedFood);
